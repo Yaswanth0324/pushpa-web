@@ -23,10 +23,16 @@ ul{
   
   }
   body{
-    background-image: url('./images/pushpa2jathara.jpg');
-      background-size:220vh 60vw;
-      background-attachment:scroll;
-      background-repeat: no-repeat;
+    background-image: url('./images/pushpa12');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #000;
   }
   h1{
     margin-top: 20px;
