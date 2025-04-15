@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pushpa Songs Player</title>
+  <style>
+    body {
+      background-image: url('./images/Pushpa2jathara.jpg');
+   
+      background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+            background-color: #000;
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem;
+      font-size: 2rem;
+      background: #800000;
+      color: #fff;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
+    }
+
+    .song-section {
+      flex: 1;
+      min-width: 300px;
+      padding: 1rem;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #28a745;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .back-button {
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 10px;
+        background: #333;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    h2 {
+      color: #ffd700;
+    }
+
+    @media screen and (max-width: 1200px) {
+            .card {
+                width: 180px;
+            }
+
+            .card img {
+                height: 220px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .card {
+                width: 160px;
+            }
+
+            .card img {
+                height: 200px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                gap: 15px;
+                padding: 15px;
+            }
+
+            .back-button {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .card {
+                width: 140px;
+            }
+
+            .card img {
+                height: 180px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                margin: 15px 10px;
+            }
+
+            .container {
+                gap: 10px;
+                padding: 10px;
+            }
+
+            .back-button {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+                margin: 10px;
+            }
+
+            .details {
+                padding: 15px;
+                margin: 15px auto;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .card {
+                width: 100%;
+                max-width: 250px; /* Ensures cards don't get too small */
+            }
+
+            .card img {
+                height: 200px;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+                margin: 10px 5px;
+            }
+
+            .container {
+                gap: 8px;
+                padding: 8px;
+            }
+
+            .back-button {
+                padding: 5px 10px;
+                font-size: 0.7rem;
+                margin: 8px;
+            }
+        }
+  </style>
+</head>
+<body>
+    <a href="http://localhost:3000/" class="back-button">&#8592; Back to Home</a>
+<header>Pushpa:The Rise  &&  Pushpa:The Rule -- Songs 🎵</header>
+
+<div class="container">
+
+  <div class="song-section">
+    <h2>Pushpa: Part 1 - Srivalli</h2>
+    <audio controls id="audio1" onplay="showLyrics(1)">
+      <source src="songs/Srivalli.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <a href="songs/Srivalli.mp3" download class="download-btn">Download HD</a>
+
+    <h2>Pushpa: Part 1 - Oo Antava</h2>
+    <audio controls id="audio2" onplay="showLyrics(2)">
+      <source src="songs/Oo Antava Oo Oo Antava.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <a href="songs/Oo Antava Oo Oo Antava.mp3" download class="download-btn">Download HD</a>
+
+    <h2>Pushpa: Part 1 - Saami Saami</h2>
+    <audio controls id="audio2" onplay="showLyrics(2)">
+      <source src="songs/Saami Saami.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <a href="songs/Saami Saami.mp3" download class="download-btn">Download HD</a>
+
+    <h2>Pushpa: Part 1 - Eyy Bidda Idhi Naa Adda</h2>
+    <audio controls id="audio2" onplay="showLyrics(2)">
+      <source src="songs/Eyy Bidda Idhi Naa Adda.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <a href="songs/Eyy Bidda Idhi Naa Adda.mp3" download class="download-btn">Download HD</a>
+
+    <h2>Pushpa: Part 1 - Dakko Dakko Meka</h2>
+    <audio controls id="audio2" onplay="showLyrics(2)">
+      <source src="songs/Dakko Dakko Meka.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <a href="songs/Dakko Dakko Meka.mp3" download class="download-btn">Download HD</a>
+
+    <h2>Pushpa: Part 2 - Pushpa Pushpa</h2>
+    <audio controls id="audio3" onplay="showLyrics(3)">
+      <source src="songs/Pushpa Pushpa.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <a href="songs/Pushpa Pushpa.mp3" download class="download-btn">Download HD</a>
+
+    <h2>Pushpa: Part 2 - Peelings</h2>
+    <audio controls id="audio4" onplay="showLyrics(4)">
+      <source src="songs/Peelings.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <a href="songs/Peelings.mp3" download class="download-btn">Download HD</a>
+
+    <h2>Pushpa: Part 2 - Sooseki</h2>
+    <audio controls id="audio4" onplay="showLyrics(4)">
+      <source src="songs/Sooseki.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <a href="songs/Sooseki.mp3" download class="download-btn">Download HD</a>
+
+    <h2>Pushpa: Part 2 - Kissik</h2>
+    <audio controls id="audio4" onplay="showLyrics(4)">
+      <source src="songs/Kissik.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <a href="songs/Kissik.mp3" download class="download-btn">Download HD</a>
+
+    <h2>Pushpa: Part 2 - Gango Renuka Thalli</h2>
+    <audio controls id="audio4" onplay="showLyrics(4)">
+      <source src="songs/Gango Renuka Thalli.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <a href="songs/Gango Renuka Thalli.mp3" download class="download-btn">Download HD</a>
+
+    <h2>Pushpa: Part 2 - Dammunte Pattukora</h2>
+    <audio controls id="audio4" onplay="showLyrics(4)">
+      <source src="songs/Dammunte Pattukora.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <a href="songs/Dammunte Pattukora.mp3" download class="download-btn">Download HD</a>
+
+  </div>
+
+  
+  </div>
+
+</div>
+
+</body>
+</html>

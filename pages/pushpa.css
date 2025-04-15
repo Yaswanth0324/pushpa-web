@@ -1,0 +1,38 @@
+ul{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px black;
+    
+  }
+  li a {
+    display:flex;
+    color:aqua;
+    text-align: center;
+    padding: 16px;
+    text-decoration: line-through;
+  }
+  li a:hover {
+    background-color: #111111;
+    color:chartreuse;
+  }
+  li{
+    border-color: yellow;
+    border-width: 5px;
+  
+  }
+  body{
+    background-image: url('./images/pushpa2jathara.jpg');
+      background-size:220vh 60vw;
+      background-attachment:scroll;
+      background-repeat: no-repeat;
+  }
+  h1{
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px black;
+    color:aqua;
+    text-align: center;
+  
+    }
+  

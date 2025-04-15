@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushpa Movie Cast</title>
+    <style>
+        body {
+            background-image: url('./images/pushpa2.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Ensures the background stays fixed while scrolling */
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /* Ensures the body takes up the full viewport height */
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 100%; /* Prevents overflow on smaller screens */
+            box-sizing: border-box;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            box-sizing: border-box;
+            transition: transform 0.3s ease; /* Smooth scaling on hover */
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px black;
+            color: aqua;
+            font-size: 2.5rem;
+        }
+
+        .details {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
+            max-width: 90%;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: #555;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 1200px) {
+            .card {
+                width: 180px;
+            }
+
+            .card img {
+                height: 220px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .card {
+                width: 160px;
+            }
+
+            .card img {
+                height: 200px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                gap: 15px;
+                padding: 15px;
+            }
+
+            .back-button {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .card {
+                width: 140px;
+            }
+
+            .card img {
+                height: 180px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                margin: 15px 10px;
+            }
+
+            .container {
+                gap: 10px;
+                padding: 10px;
+            }
+
+            .back-button {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+                margin: 10px;
+            }
+
+            .details {
+                padding: 15px;
+                margin: 15px auto;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .card {
+                width: 100%;
+                max-width: 250px; /* Ensures cards don't get too small */
+            }
+
+            .card img {
+                height: 200px;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+                margin: 10px 5px;
+            }
+
+            .container {
+                gap: 8px;
+                padding: 8px;
+            }
+
+            .back-button {
+                padding: 5px 10px;
+                font-size: 0.7rem;
+                margin: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="pushpa.html" class="back-button">← Back to Home</a>
+    <h1>Pushpa – Movie Details</h1>
+    <div class="container">
+        <div class="card">
+            <p><strong>Director:</strong> Sukumar</p>
+            <img src="./images/sukumar.jpeg" alt="Sukumar">
+        </div>
+        <div class="card">
+            <p><strong>Producers:</strong> Naveen Yerneni and Y. Ravi Shankar (Mythri Movie Makers)</p>
+            <img src="./images/ravi.jpeg" alt="Producers">
+        </div>
+        <div class="card">
+            <p><strong>Music:</strong> Devi Sri Prasad (DSP)</p>
+            <img src="./images/dsp.jpeg" alt="DSP">
+        </div>
+        <div class="card">
+            <p><strong>Cinematography:</strong> Mirosław Kuba Brożek</p>
+            <img src="./images/kuba.jpeg" alt="Kuba">
+        </div>
+        <div class="card">
+            <p><strong>Editor:</strong> Karthika Srinivas</p>
+            <img src="./images/karthika.jpeg" alt="Srinivas">
+        </div>
+    </div>
+    <h1>Pushpa: The Rise – Part 1 (2021) And Pushpa: The Rule – Part 2 (2024) Cast</h1>
+    <div class="container">
+        <div class="card">
+            <img src="./images/AA.jpeg" alt="Allu Arjun">
+            <h3>Allu Arjun</h3>
+            <p>As Pushpa Raj</p>
+        </div>
+        <div class="card">
+            <img src="./images/rashmika.jpg" alt="Rashmika Mandanna">
+            <h3>Rashmika Mandanna</h3>
+            <p>As Srivalli</p>
+        </div>
+        <div class="card">
+            <img src="./images/fasil.jpeg" alt="Fahadh Faasil">
+            <h3>Fahadh Faasil</h3>
+            <p>As SP Bhanwar Singh Shekhawat IPS</p>
+        </div>
+        <div class="card">
+            <img src="./images/sunil.jpeg" alt="Sunil">
+            <h3>Sunil</h3>
+            <p>As Mangalam Srinu</p>
+        </div>
+        <div class="card">
+            <img src="./images/anasuya.jpeg" alt="Anasuya Bharadwaj">
+            <h3>Anasuya Bharadwaj</h3>
+            <p>As Dakshayani</p>
+        </div>
+        <div class="card">
+            <img src="./images/danunjaya.jpeg" alt="Dhananjaya">
+            <h3>Dhananjaya</h3>
+            <p>As Jaali Reddy</p>
+        </div>
+        <div class="card">
+            ` <img src="./images/gosh.jpeg" alt="Ajay Ghosh">
+            <h3>Ajay Ghosh</h3>
+            <p>As Konda Reddy</p>
+        </div>
+        <div class="card">
+            <img src="./images/shanmuk.jpeg" alt="Shanmukh">
+            <h3>Shanmukh</h3>
+            <p>As Jakkareddy</p>
+        </div>
+        <div class="card">
+            <img src="./images/rao.jpeg" alt="Rao Ramesh">
+            <h3>Rao Ramesh</h3>
+            <p>As MP Bhumireddy Siddappa Naidu</p>
+        </div>
+        <div class="card">
+            <img src="./images/ajay.jpeg" alt="Ajay">
+            <h3>Ajay</h3>
+            <p>As Molleti Mohan</p>
+        </div>
+        <div class="card">
+            <img src="./images/samantha.jpeg" alt="Samantha Ruth Prabhu">
+            <h3>Samantha Ruth Prabhu</h3>
+            <p>Special appearance in "Oo Antava"</p>
+        </div>
+        <div class="card">
+            <img src="./images/keshava.jpeg" alt="Jagadeesh Pratap Bandari">
+            <h3>Jagadeesh Pratap Bandari</h3>
+            <p>As Kesava</p>
+        </div>
+        <div class="card">
+            <img src="./images/kalpalatha.jpeg" alt="Kalpalatha">
+            <h3>Kalpalatha</h3>
+            <p>As Pushpa’s mother</p>
+        </div>
+        <div class="card">
+            <img src="./images/pavani.jpeg" alt="Pavani Karanam">
+            <h3>Pavani Karanam</h3>
+            <p>As Pushpa's Niece</p>
+        </div>
+        <div class="card">
+            <img src="./images/raj.jpeg" alt="Raj Tirandasu">
+            <h3>Raj Tirandasu</h3>
+            <p>As Mogileesu</p>
+        </div>
+        <div class="card">
+            <img src="./images/gopi.jpeg" alt="Mime Gopi">
+            <h3>Mime Gopi</h3>
+            <p>As Chennai Murugan</p>
+        </div>
+        <div class="card">
+            <img src="./images/dhruvan.jpeg" alt="Dhruvan">
+            <h3>Master Dhruvan</h3>
+            <p>As Young Pushpa Raj</p>
+        </div>
+        <div class="card">
+            <img src="./images/sritej.jpeg" alt="Sritej">
+            <h3>Sritej</h3>
+            <p>As Pushpa's Half Brother</p>
+        </div>
+        <div class="card">
+            <img src="./images/jagapathi.jpeg" alt="Jagapathi Babu">
+            <h3>Jagapathi Babu</h3>
+            <p>As Kogatam Veera Pratap Reddy</p>
+        </div>
+        <div class="card">
+            <img src="./images/bramhaji.jpeg" alt="Bramhaji">
+            <h3>Bramhaji</h3>
+            <p>As SI Kupparaj</p>
+        </div>
+        <div class="card">
+            <img src="./images/tharak.jpeg" alt="Tharak Ponnappa">
+            <h3>Tharak Ponnappa</h3>
+            <p>As Kogatam Buggareddy</p>
+        </div>
+        <div class="card">
+            <img src="./images/divi.jpeg" alt="Divi Vadthya">
+            <h3>Divi Vadthya</h3>
+            <p>As News Reporter</p>
+        </div>
+        <div class="card">
+            <img src="./images/sreelela.jpeg" alt="Sreeleela">
+            <h3>Sreeleela</h3>
+            <p>Special appearance in "Kissik song"</p>
+        </div>
+        <div class="card">
+            <img src="./images/sourabh.jpeg" alt="Sourabh Sachdev">
+            <h3>Sourabh Sachdev</h3>
+            <p>Red Sandle Dealer</p>
+        </div>
+        <div class="card">
+            <img src="./images/adithya.jpeg" alt="Adithya">
+            <h3>Adithya</h3>
+            <p>As Kogatam Subbaraj</p>
+        </div>
+        <div class="card">
+            <img src="./images/vithya.jpg" alt="Vithya Pansringarm">
+            <h3>Vithya Pansringarm</h3>
+            <p>As Don Hiroshi</p>
+        </div>
+        <div class="card">
+            <img src="./images/naren.jpeg" alt="Adukalam Naren">
+            <h3>Adukalam Naren</h3>
+            <p>As CM KVM Narasimha Reddy</p>
+        </div>
+        <div class="card">
+            <img src="./images/sathya.jpeg" alt="Sathya">
+            <h3>Sathya</h3>
+            <p>As Japan translator</p>
+        </div>
+        <div class="card">
+            <img src="./images/subbarao.jpeg" alt="Subhodayam Subbarao">
+            <h3>Subhodayam Subbarao</h3>
+            <p>As Subbareddy</p>
+        </div>
+        <div class="card">
+            <img src="./images/dayanandh.jpeg" alt="Dayanandh Reddy">
+            <h3>Dayanandh Reddy</h3>
+            <p>As Munirathnam</p>
+        </div>
+    </div>
+</body>
+</html>
