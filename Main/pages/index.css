@@ -11,7 +11,7 @@ ul{
     color:aqua;
     text-align: center;
     padding: 16px;
-    text-decoration: line-through;
+    text-decoration:none;
   }
   li a:hover {
     background-color: #111111;
@@ -23,7 +23,7 @@ ul{
   
   }
   body{
-    background-image: url('./images/pushpa12');
+    background-image: url('./images/pushpa12.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -39,6 +39,19 @@ ul{
     text-shadow: 2px 2px 5px black;
     color:aqua;
     text-align: center;
-  
     }
-  
+    .logo h1 {
+      color: #00ffff; /* Aqua */
+      text-shadow: 2px 2px 5px black;
+      font-size: 2rem;
+      letter-spacing: 2px;
+  }
+  footer {
+    background-color:none;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
